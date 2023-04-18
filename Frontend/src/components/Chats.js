@@ -3,7 +3,6 @@ import "../styles/style.css";
 import "../styles/materialize.css";
 import axios from "axios";
 const Chats = ({ room, logout, chat }) => {
-  // let rooms = [];
   const [rooms , setUsers] = useState([])
   const baseURL = "http://127.0.0.1:8000/";
   axios.get(baseURL + "room").then((response) => {
